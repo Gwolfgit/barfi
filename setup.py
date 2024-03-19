@@ -28,6 +28,7 @@ setuptools.setup(
     install_requires=[
         "streamlit >= 0.63",
         "networkx >= 2.6.2",
+        "fickling~=0.1.0",
     ],
     project_urls={
         'Source': 'https://github.com/krish-adi/barfi',
