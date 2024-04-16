@@ -1,11 +1,12 @@
 import networkx as nx
 import copy
 from .block_builder import Block
-from typing import List, Dict
+from typing import Optional, List, Dict
 
 
 class ComputeEngine(object):
-    def __init__(self, blocks: List[Block] = [], **kwargs) -> None:
+    def __init__(self, blocks: Optional[List[Block]] = None, **kwargs) -> None:
+        blocks = [] if blocks is None else blocks
         # Initialise the Compute Enginge
         # The primitive block types that are tied to this compute engine
         self._blocks = blocks
