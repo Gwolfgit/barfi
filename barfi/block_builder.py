@@ -185,7 +185,7 @@ class Block(object):
 
         return {'name': self._name, 'inputs': _inputs_export, 'outputs': _outputs_export, 'options': _options_export}
 
-    def _on_compute():
+    def _on_compute(self):
         pass
 
     def add_compute(self, _func: Callable):
